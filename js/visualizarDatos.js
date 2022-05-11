@@ -21,7 +21,7 @@ window.onload = async () => {
     <p>Número exterior: ${data.direccion.numExt}</p>
     <p>Número interior: ${data.direccion?.numInt || 'N/A'}</p>
     <p>Colonia: ${data.direccion.colonia}</p>
-    <p>Delegacion o Municipio: ${data.direccion.delegacion}</p>
+    <p>Delegación o Municipio: ${data.direccion.delegacion}</p>
     <p>Estado: ${data.direccion.estado}</p>
   `;
 }

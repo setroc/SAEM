@@ -97,7 +97,7 @@ const inscribirETS = async (materia) => {
 
   } else {
     Swal.fire({
-      icon: 'info',
+      icon: 'error',
       title: 'ETS ya inscrito',
       text: 'El ETS que esta intentando inscribir ya está inscrito',
       confirmButtonText: 'Aceptar'
@@ -190,10 +190,11 @@ const finalizarInscripcion = async () => {
             }
         });
         await updateDoc(doc(db,'InscripcionEts',documento.id),{materias});
-      Swal.fire({
+      await Swal.fire({
         icon: 'success',
-        title: 'Ok!',
-        text: 'Inscripcion Finalizada'
+        title: 'Inscripción de ETS finalizada',
+        text: 'Has concluido el proceso de inscripción de ETS',
+        confirmButtonText: 'Aceptar'
       })
         window.location.href = './index.html';
     })

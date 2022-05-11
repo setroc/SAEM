@@ -170,7 +170,7 @@ const guardarDatos = async (e) => {
           estado: estado.value
         }
       });
-      Swal.fire({
+      await Swal.fire({
         icon: 'success',
         title: 'Datos guardados con éxito',
         text: 'Los datos han sido modificados correctamente',

@@ -274,7 +274,7 @@ const finalizarInscripcion = async () => {
                 }
             });
             await updateDoc(doc(db,'Inscripcion',documento.id),{materias});
-            Swal.fire({
+            await Swal.fire({
                 icon: 'success',
                 title: 'Reinscripción realizada',
                 text: 'Has concluido el proceso de reinscripción',
