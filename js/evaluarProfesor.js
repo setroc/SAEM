@@ -2,8 +2,6 @@ import{datosPeriodo} from './firebase.js';
 import { getFirestore, collection, addDoc,query, where, getDocs, getDoc, doc, setDoc, updateDoc} from "http://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"
 export const getData = () => getDocs(collection(db,'Evaluaciones',localStorage.getItem("boleta"),'Desempeño'));//Funcion para cargar las materias de la db
 export const isFinished = (arrayTermino) =>{setDoc(doc(db,'Evaluaciones',localStorage.getItem("boleta"),'Materias Evaluadas','Completo'),{arrayTermino});}//Funcion para tener las materias evaluadas en la db
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/src/sweetalert2.scss'
 
 const db = getFirestore();
 let cont = 0;
