@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="styles/bootstrap.css">
+      <link rel="stylesheet" href="styles/navbar.css">
+
+    <title>Historial Académico</title>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SAEM</a>
+          <h4 class="d-flex justify-content-end" id="text-username">Bienvenido, Username!</h4>
+      </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link h6" href="visualizarDatos.html" id="datosGenerales" role="button">Datos Generales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6" href="visualizarHistorialAcademico.html" id="datosAcademicos" role="button">Historial Acad&eacute;mico</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link h6 dropdown-toggle" id="ìnscipcionActual" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inscripci&oacute;n Actual</a>
+                    <ul class="dropdown-menu" aria-labelledby="inscripcionActual">
+                        <li><a class="dropdown-item" href="visualizarCalificacionesDeLasMateriasInscritas.html">Calificaciones</a></li>
+                        <li><a class="dropdown-item" href="visualizarHorarios.html">Horario</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link h6 dropdown-toggle" id="Reinscripciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reinscripciones</a>
+                    <ul class="dropdown-menu" aria-labelledby="Reinscripciones">
+                        <li><a class="dropdown-item" href="visualizarCitaDeReinscripcion.html">Cita de Reinscripci&oacute;n</a></li>
+                        <li><a class="dropdown-item" href="inscribirMaterias.html">Reinscripci&oacute;n</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link h6 dropdown-toggle" id="ETS" role="button" data-bs-toggle="dropdown" aria-expanded="false">ETS</a>
+                    <ul class="dropdown-menu" aria-labelledby="ETS">
+                        <li><a class="dropdown-item" href="inscribirETS.html">Inscribir ETS</a></li>
+                        <li><a class="dropdown-item" href="calificacionETS.html">Calificacion</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link h6 dropdown-toggle" id="ETS" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profesores</a>
+                    <ul class="dropdown-menu" aria-labelledby="ETS">
+                        <li><a class="dropdown-item" href="./evaluarProfesor.html">Evaluación</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex ml-auto">
+            <a class="nav-link h6" href="modificarContrasena.html">Mi cuenta</a>
+            <a class="nav-link h6" href="cerrar_session.html">Cerrar Sesi&oacute;n</a>
+        </div>
+    </div>
+  </nav>
+
+
+    <div class="container" id="tablas">
+        <br>
+        <h1>Historial Académico</h1>
+        <div class="datos">
+            Alumno: <div class="dato" id="nombre-completo">Jorge Omar Garcia Bedolla</div><br>
+            Boleta: <div class="dato" id="numBoleta">2020456157</div><br>
+            Promedio: <div class="dato" id="promedio"></div><br>
+            
+        </div>
+    </div>
+  <footer class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">INSTITUTO POLITÉCNICO NACIONAL</h5>
+                  <p>
+                      D.R. Instituto Politécnico Nacional (IPN). Av. Luis Enrique Erro S/N, Unidad Profesional
+                      Adolfo López Mateos, Zacatenco, Alcaldía Gustavo A. Madero, C.P. 07738, Ciudad de México,
+                      2019. Conmutador: 55 57 29 60 00 / 55 57 29 63 00.
+                  </p>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase"></h5>
+                  <p>
+                      Esta página es una obra intelectual protegida por la Ley Federal del Derecho de Autor,
+                      puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+                      se cite la fuente completa y su dirección electrónica; su uso para otros fines,
+                      requiere autorización previa y por escrito de la Dirección General del Instituto.
+                  </p>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Denuncia contra servidores públicos</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="#!" class="text-dark">Síguenos en</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+                      </li>
+
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-0">Enlaces</h5>
+
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" class="text-dark">Participa</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Publicaciones Oficiales</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Plataforma Nacional de Transparencia</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Alerta</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Denuncia</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">¿Qué es gob.mx?</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="#!" class="text-dark">Es el portal único de trámites, información y participación ciudadana. Leer más</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-0"></h5>
+
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" class="text-dark">Portal de datos abiertos</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Declaración de accesibilidad</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Aviso de privacidad integral</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Aviso de privacidad simplificado</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark"> Términos y Condiciones</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Política de seguridad</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Mapa de sitio</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Oozma Kamban
+          <a class="text-dark" href=""></a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script> 
+    
+    document.getElementById("text-username").textContent = 'Bienvenido ' + localStorage.getItem('nombre'); 
+    document.getElementById("nombre-completo").textContent =  'Nombre: ' + localStorage.getItem('nombre_completo');
+    document.getElementById("numBoleta").textContent =  'Boleta: ' + localStorage.getItem('boleta');
+   
+  </script>
+  <script type="module" src="./js/visualizarHistorialAcademico.js"></script>
+
+</html>

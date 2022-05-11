@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login SAEM</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+  </head>
+<body>
+<div class="container-fluid">
+    <h1 class="text-center mt">Sistema de Administraci&oacute;n Escolar Mejorado</h1>
+    <div class="d-flex justify-content-center mt-5">
+        <form action="index.html" class="d-flex flex-column justify-content-center col-4" id="LoginForm">
+            <div class="form-outline mb-4">
+                <input type="number" id="userName" class="form-control" required/>
+                <label class="form-label" for="userName">N&uacute;mero de boleta</label>
+            </div>
+            <div class="form-outline mb-4">
+                <input type="password" id="password" class="form-control" required/>
+                <label class="form-label" for="password">Contrase&ntilde;a</label>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <a href="#">Recuperar contrase&ntilde;a</a>
+                </div>
+            </div>
+            <button type="" class="btn btn-primary mb-4 text-center mt-3">Ingresar</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module"  src="js/firebase.js"></script>
+<script type="module"  src="js/login.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</html>

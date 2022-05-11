@@ -1,0 +1,24 @@
+.h6{
+    margin: 0 20px;
+}
+.name{
+    color: #006699;
+}
+.img{
+    max-height: 35vh;
+    display: flex;
+}
+
+#news{
+    padding: 10rem;
+    border: 45px solid #006699;
+    max-width: 60%;
+    min-width: 70%;
+    margin: 5rem auto 0 auto;
+}
+
+@media(min-width: 460px){
+    #news{
+
+    }
+}
