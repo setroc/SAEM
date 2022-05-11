@@ -19,7 +19,7 @@ export const Login = async (boleta, contrasena) => {
             localStorage.setItem('boleta', boleta);
             localStorage.setItem('nombre_completo', docSnap.data().nombre + ' ' + docSnap.data().aPaterno + ' ' + docSnap.data().aMaterno);
             localStorage.setItem('nombre', docSnap.data().nombre);
-            window.location.href = "../index.html";
+            window.location.href = "./inicio.html";
         } else {
             await Swal.fire({
                 icon: 'error',
@@ -27,7 +27,7 @@ export const Login = async (boleta, contrasena) => {
                 text: 'Número de boleta o contraseña incorrecta',
                 confirmButtonText: 'Aceptar'
             })
-            window.location.href = "../login.html";
+            window.location.href = "./index.html";
         }
     } else {
         await Swal.fire({
@@ -36,6 +36,6 @@ export const Login = async (boleta, contrasena) => {
             text: 'Número de boleta o contraseña incorrecta',
             confirmButtonText: 'Aceptar'
         })
-        window.location.href = "../login.html"; 
+        window.location.href = "./index.html"; 
     }
 }
