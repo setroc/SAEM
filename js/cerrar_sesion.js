@@ -1,3 +1,5 @@
-localStorage.clear();
-
-window.location.href = "/index.html";
+window.onload = () => {
+  localStorage.clear();
+  
+  window.location.replace("index.html");
+}
