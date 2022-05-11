@@ -150,7 +150,7 @@ const inscribirMateria = async(e, datos) => {
                 Swal.fire({
                     icon: 'success',
                     title: 'Materia inscrita',
-                    text: 'Créditos disponibles: '${creditos},
+                    text: `Créditos disponibles: ${creditos}`,
                     confirmButtonText: 'Aceptar'
                 })
             } else { // No puedo inscribir la materia
@@ -280,7 +280,7 @@ const finalizarInscripcion = async () => {
                 text: 'Has concluido el proceso de reinscripción',
                 confirmButtonText: 'Aceptar'
             })
-            window.location.href = './index.html';
+            window.location.href = './inicio.html';
         })
     } catch (error) {
         console.log(error);

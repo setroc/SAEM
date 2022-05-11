@@ -196,7 +196,7 @@ const finalizarInscripcion = async () => {
         text: 'Has concluido el proceso de inscripción de ETS',
         confirmButtonText: 'Aceptar'
       })
-        window.location.href = './index.html';
+        window.location.href = './inicio.html';
     })
   } catch (error) {
       console.log(error);
