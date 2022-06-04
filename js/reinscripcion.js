@@ -252,6 +252,15 @@ btnFinalizarInscripcion.addEventListener('click',()=>finalizarInscripcion());
 const finalizarInscripcion = async () => {
     // console.log(t)
     try {
+        if (materiasInscritas.length<=0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Reinscripción no realizada',
+                text: 'Debes agregar una materia antes de finalizar tu inscripción.',
+                confirmButtonText: 'Aceptar'
+            })
+            return;
+        }
         const {periodo} = await datosPeriodo();
         // Referencia a la coleccion Inscripcion
         const inscripcionRef = collection(db,"Inscripcion");
