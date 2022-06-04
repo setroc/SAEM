@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     try {
         const {periodo, inscripcion} = await datosPeriodo();
         // Si es periodo de inscripción, entonces no hay materias ni calificaciones que mostrar
-        if (!inscripcion) {
+        // if (!inscripcion) {
             // Referencia a la coleccion Inscripcion
             const inscripcionRef = collection(db,"Inscripcion");
             // Referencia al alumno
@@ -30,10 +30,10 @@ window.addEventListener('DOMContentLoaded', async () => {
                 addMateria(grupo.id, primerParcial, segundoParcial, tercerParcial, final, nombreMt);
     
             }
-        } else {
-            document.querySelector("#titulo").innerText="No hay información para mostrar";
-            document.querySelector("#contenedorCalificaciones").classList.add('d-none');
-        }
+        // } else {
+        //     document.querySelector("#titulo").innerText="No hay información para mostrar";
+        //     document.querySelector("#contenedorCalificaciones").classList.add('d-none');
+        // }
 
     } catch (error) {
         console.log(error)

@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         const materiasRp = await materiasReprobadas();
         const {periodo, inscripcion} = await datosPeriodo();
 
-        if (inscripcion) { // se pueden inscribir
+        // if (inscripcion) { // se pueden inscribir
             // Referencia a la coleccion Inscripcion
             const inscripcionRef = collection(db,"Inscripcion");
             // Referencia al alumno
@@ -27,15 +27,15 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 
             })
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'No hay información para mostrar',
-                text: 'No existe información',
-                confirmButtonText: 'Aceptar'
-            })
-            console.log('No es epoca de inscripción');
-        }
+        // } else {
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'No hay información para mostrar',
+        //         text: 'No existe información',
+        //         confirmButtonText: 'Aceptar'
+        //     })
+        //     console.log('No es epoca de inscripción');
+        // }
     } catch (error) {
         console.log(error)
     }
